@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
- * main - main function
- * Return: reurns 0
+/**
+ * main -function main
+ * Return: Rturns zero
  * n: var of type int
  */
 int main(void)
@@ -13,10 +13,10 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
-		printf("%d is positive")
-	if else (n == 0)
-		printf("%d is zero")
+		printf("%d is positive", n);
+	else if (n == 0)
+		printf("%d is zero", n);
 	else
-		printf("d is negative")
+		printf("%d is negative", n);
 	return (0);
 }
