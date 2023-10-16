@@ -1,10 +1,10 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * main - main function
  * Return: 0
  */
-in main(void)
+int main(void)
 {
-	printf("_putchar");
+	_putchar("_putchar\n");
 	return (0);
 }
