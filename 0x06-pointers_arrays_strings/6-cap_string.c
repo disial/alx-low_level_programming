@@ -23,7 +23,7 @@ char *cap_string(char *ch)
 		{
 			if (ch[i] > 96 && ch[i] < 123)
 			{
-				ch[i] -=32;
+				ch[i] -= 32;
 				j = 0;
 			}
 			else if (ch[i] > 64 && ch[i] < 91)
