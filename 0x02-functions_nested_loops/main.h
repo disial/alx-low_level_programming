@@ -21,5 +21,6 @@ char *string_toupper(char *ch);
 char *cap_string(char *ch);
 char *leet(char *n);
 void print_alphabet(void);
+void print_alphabet_x10(void);
 
 #endif
