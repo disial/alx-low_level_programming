@@ -12,7 +12,7 @@ unsigned int _strspn(char *s, char *accept)
 	int i = 0;
 	int j = 0;
 	int k;
-	
+
 	for (; s[i] != '\0'; i++)
 	{
 		if (s[i] != 32)
