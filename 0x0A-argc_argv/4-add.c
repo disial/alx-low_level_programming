@@ -26,13 +26,13 @@ int main(int argc, char *argv[])
 			if (atoi(argv[i]) == 0 && argv[i][0] != '0')
 			{
 				printf("Error\n");
-				return (0);
+				return (1);
 			}
 			else
 			{
 				sum += atoi(argv[i]);
 				tot = sum;
-			}
+			i}
 		}
 		printf("%d\n", tot);
 		return (0);
