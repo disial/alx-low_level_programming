@@ -12,10 +12,8 @@ int main(int argc, char *argv[])
 	int i = 0;
 	int sum;
 	int num;
-
-	if (argc == 1)
-		printf("%d\n", argc - 1);
-	else if (argc > 1)
+	
+	if (argc >= 1)
 	{
 		sum = 0;
 		for (i = 1; i <= argc - 1; i++)
@@ -27,11 +25,9 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 			else
-			{
 				sum += num;
-			}
+			printf("%d\n", sum);
 		}
-		printf("%d\n", sum);
 	}
 	return (0);
 }
