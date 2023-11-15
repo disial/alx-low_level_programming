@@ -14,20 +14,20 @@ char *str_concat(char *s1, char *s2)
 	char *temp, *dest;
 
 	temp = s1;
-	if (s1 == NULL)
+	if (!s1)
 		s1 = "";
-	else if (s1 != NULL)
+	else if (s1)
 		while (*temp++)
 			i++;
 	temp = s2;
-	if (s2 == NULL)
+	if (!s2)
 		s2 = "";
-	else if (s2 != NULL)
+	else if (s2)
 		while (*temp++)
 			j++;
 	dest = malloc(i + j + 1);
 	temp = dest;
-	if (dest == NULL)
+	if (!dest)
 		return (NULL);
 	while (*s1)
 		*temp++ = *s1++;
