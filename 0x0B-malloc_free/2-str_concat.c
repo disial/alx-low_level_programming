@@ -14,12 +14,14 @@ char *str_concat(char *s1, char *s2)
 	char *temp, *dest;
 
 	temp = s1;
+	i = 0;
 	if (!s1)
 		s1 = "";
 	else if (s1)
 		while (*temp++)
 			i++;
 	temp = s2;
+	j = 0;
 	if (!s2)
 		s2 = "";
 	else if (s2)
