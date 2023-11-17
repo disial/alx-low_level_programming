@@ -18,7 +18,7 @@ void _str(va_list l)
 	char *str;
 
 	str = va_arg(l, char *);
-	if (!str)
+	if (str == NULL)
 		str = "(nil)";
 	printf("%s", str);
 }
