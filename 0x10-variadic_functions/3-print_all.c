@@ -58,7 +58,9 @@ void print_all(const char * const format, ...)
 		{ "i", _int}
 	};
 	va_start(args, format);
-	for (i = 0, separator = ""; format != NULL && format[i / 4] != '\0';)
+	i = 0;
+	separator = "";
+	while (format != NULL && format[i / 4] != '\0')
 	{
 		j = i % 4;
 		if (format_types[j].type[0] == format[i / 4])
