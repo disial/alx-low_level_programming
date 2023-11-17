@@ -13,7 +13,9 @@ void _f(va_list l);
 void _str(va_list l);
 
 /**
- * format_types - types
+ * struct check_format - types
+ * @type: typr
+ * @f: func
  */
 typedef struct check_format
 {
