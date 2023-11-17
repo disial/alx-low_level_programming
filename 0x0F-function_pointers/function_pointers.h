@@ -1,5 +1,5 @@
-#ifndef FUNC_PTR_H
-#define FUNC_PTR_H
+#ifndef _FUNC_PTR_H_
+#define _FUNC_PTR_H_
 #include <stdlib.h>
 
 void print_name(char *name, void (*f)(char *));
