@@ -1,5 +1,7 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
+#include <ctype.h>
 #include <stdlib.h>
 /**
  * main - main func
@@ -9,25 +11,31 @@
  */
 int main(int argc, char *argv[])
 {
-	int i = 0;
-	int sum;
-	int num;
-	
-	if (argc >= 1)
+	int i;
+	unsigned int j, k;
+	char *str;
+
+	if (argc > 1)
 	{
-		sum = 0;
-		for (i = 1; i <= argc - 1; i++)
+		for (i = 1; i < argc; i++)
 		{
-			num = atoi(argv[i]);
-			if (num == 0 && argv[i][0] != '0')
+			str = argv[i];
+			for (k = 0; k < strlen(str); k++)
 			{
-				printf("Error\n");
-				return (1);
+				if (str[k] < 48 || str[k] > 57)
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
-			else
-				sum += num;
-			printf("%d\n", sum);
+			j += atoi(str);
+			str++;
 		}
+		printf("%d\n", j);
+	}
+	else
+	{
+		printf("0\n");
 	}
 	return (0);
 }
