@@ -23,3 +23,20 @@ list_t *add_node(list_t **head, const char *str)
 	}
 	return (0);
 }
+
+/**
+ * _slen - str len
+ * @str: str
+ * Return: str len
+ */
+int _slen(const char *str)
+{
+	int i;
+
+	for (i = 0; *str;)
+	{
+		str++;
+		i++;
+	}
+	return (i);
+}
