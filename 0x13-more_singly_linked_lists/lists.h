@@ -43,5 +43,6 @@ int _slen(const char *str);
 void free_list(list_t *head);
 
 size_t print_listint(const listint_t *h);
+size_t listint_len(const listint_t *h);
 
 #endif
